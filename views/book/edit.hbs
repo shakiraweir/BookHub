@@ -1,0 +1,11 @@
+<div class="form-container">
+	<h4>Fix it!</h4>
+	<form method="POST" action="/book/{{id}}?_method=PATCH" class="book-form">
+		<p class="input-field">
+			<textarea name="book[description]" cols="30" rows="2" placeholder="Description"></textarea>
+		</p>
+		<p class='input-field'>
+			<input type="submit" value='Submit' class='btn'>
+		</p>
+	</form>
+</div>

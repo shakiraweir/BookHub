@@ -1,0 +1,21 @@
+<div class="user">
+
+{{#if message }}
+	<h3>{{ message }}</h3>
+{{/if}}
+
+<div class="form-container">
+	<p class="login">Login</p>
+	<form method="post" action="/user/login">
+		<div class="form-group">
+			<input class="form-control" type="text" name="email" id="email" placeholder="EMAIL">
+		</div>
+
+		<div class="form-group">
+			<input class="form-control" type="password" name="password" id="password" placeholder="PASSWORD">
+		</div>
+
+		<input class="btn" type="submit">
+	</form>
+</div>
+</div>

@@ -1,0 +1,49 @@
+<div class="row">
+    {{#if books}}   
+        <div class="books">
+            {{#each books}}
+            <div class="card-content">
+                <div class="card">
+                    <h2 class="title">
+                        {{ title }}
+                    </h2>
+                    <div class="author">
+                        by {{ author }}
+                    </div>
+                    <div class="subtopic">
+                        {{ subtopic }}
+                    </div>
+                    <div class="description">
+                        {{ description }}
+                    </div>
+                     <div class="comments">
+                        {{ comments }}
+                    </div>
+                    <div class="buttons">
+                        
+                        <p>
+                            <label>Purchased:</label>
+                            {{#if complete}}
+                            <input type="checkbox" name="complete" id="complete" checked/>
+                            {{else}}
+                            <input type="checkbox" name="complete" id="complete"/>
+                            {{/if}}
+                        </p>
+                        <div>
+                            <form method="PUT" action="/book/{{id}}/edit" class="Book-form">
+                                <input type="submit" value='Update' class='btn-book'>
+                            </form>
+                            <form method="POST" action="/book/{{id}}?_method=DELETE" class="Book-form">
+                                <input type="submit" value='Delete' class='btn-book'>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="date">
+                    Item added {{ createdAt }}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    {{/if}}
+</div>
