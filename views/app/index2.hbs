@@ -1,0 +1,24 @@
+<section class="post-row">
+    {{#if posts}}   
+        <div class="posts">
+            {{#each posts}}
+            ¸   <div class="row card-content">
+                    <div class="card">
+                        <h2 class="title">
+                            {{ title }}
+                        </h2>
+                        <div class="author">
+                            by {{ author }}
+                        </div>
+                        <div class="comment">
+                            {{ comment }}
+                        </div>     
+                        <div class="date">
+                        Item added {{ createdAt }}
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    {{/if}}
+</section>

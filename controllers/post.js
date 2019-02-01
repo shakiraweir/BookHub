@@ -8,6 +8,7 @@ module.exports = {
             comment: req.body.post.comment
         })
         .then(post => {
+            // res.redirect(`post/${post._id}`)
             res.redirect(`post/${post._id}`)
         })
     },
