@@ -1,6 +1,6 @@
 const User = require('../models/User')
 const Book = require('../models/Book')
-const Comment = require('../models/Comment')
+const Post = require('../models/Post')
 
 const passport = require('passport')
 

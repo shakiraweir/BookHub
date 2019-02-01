@@ -1,4 +1,5 @@
 const Book = require('../models/Book')
+// const Comment = require('../models/Comment')
 
 module.exports = {
     index: (req, res) => {
@@ -11,3 +12,17 @@ module.exports = {
         })
     }
 }
+
+
+// module.exports = {
+//     index: (req, res) => {
+//         Comment.find({})
+//         .sort({ createdAt: -1 })
+//         .limit(7)
+//         .populate("user")
+//         .then(comment => {
+//             res.render("app/index", { comments })
+//         })
+//     }
+// }
+

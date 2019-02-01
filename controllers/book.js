@@ -24,39 +24,13 @@ module.exports = {
             res.render("book/new", { book })
         })
     },
-    // update: (req, res) => {
-    //     let { description } = req.body.book
-    //     Book.findOneAndUpdate(
-    //         { _id: req.params.id}, 
-    //         {$set:{description:description}})
-    //     .then(() => {res.redirect('/')})
-    // },
-    // update: (req, res) => {
-    //     let { description } = req.body;
-    //     Book.findOne({ _id: req.params.id }).then(book => {
-    //       book.comments.push({
-    //         title,
-    //         author,
-    //         subtopic,
-    //         description,
-    //         comment, 
-    //         complete,
-    //         user: req.user._id
-    //       });
-    //       book.save(err => {
-    //         res.redirect(`/book/${book._id}`);
-    //       });
-    //     });
-    //   },
     update: (req, res) => {
-        true
-        // req.body.complete = req.body.complete ? true : false
-        Book.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true }).then(
-          book => {
-            res.redirect(`/book/${book._id}`);
-          }
-        );
-      },
+        let { description } = req.body.book
+        Book.findOneAndUpdate(
+            { _id: req.params.id}, 
+            {$set:{description:description}})
+        .then(() => {res.redirect('/')})
+    },
     delete: (req, res) => {
         Book.findOneAndRemove({ _id: req.params.id })
         .then( () => {
