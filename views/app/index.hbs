@@ -16,8 +16,8 @@
                     <div class="description">
                         {{ description }}
                     </div>
-                     <div class="comments">
-                        {{ comments }}
+                     <div class="comment">
+                        {{ comment }}
                     </div>
                     <div class="buttons">
                         
@@ -30,7 +30,7 @@
                             {{/if}}
                         </p>
                         <div>
-                            <form method="PUT" action="/book/{{id}}/edit" class="Book-form">
+                            <form method="PUT" action="/book/{{id}}?_method=put" class="Book-form">
                                 <input type="submit" value='Update' class='btn-book'>
                             </form>
                             <form method="POST" action="/book/{{id}}?_method=DELETE" class="Book-form">

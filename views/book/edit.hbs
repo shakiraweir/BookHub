@@ -1,5 +1,5 @@
-<div class="form-container">
-	<h4>Fix it!</h4>
+{{!-- <div class="form-container">
+	<h3>Update {{ book.title }}</h3>
 	<form method="POST" action="/book/{{id}}?_method=PATCH" class="book-form">
 		<p class="input-field">
 			<textarea name="book[description]" cols="30" rows="2" placeholder="Description"></textarea>
@@ -8,4 +8,31 @@
 			<input type="submit" value='Submit' class='btn'>
 		</p>
 	</form>
+</div> --}}
+
+<div class="row">
+<div class="form-container">
+	<i class="fas fa-book-open fa-2x"></i>
+	<h2>Update</h2>
+	<form action="/book" method="POST" class="book-form">
+		<p class="input-field">
+			<textarea name="book[title]" cols="70" rows="2" placeholder="Title"></textarea>
+		</p>
+		<p class="input-field">
+			<textarea name="book[author]" cols="70" rows="2" placeholder="Author"></textarea>
+		</p>
+		<p class="input-field">   
+			<textarea name="book[subtopic]" cols="70" rows="2" placeholder="Subtopic"></textarea>
+		</p>
+		<p class="input-field">
+			<textarea name="book[description]" cols="70" rows="4" placeholder="Description"></textarea>
+		</p>
+		<p class="input-field">
+			<textarea name="book[comment]" cols="70" rows="6" placeholder="Comment"></textarea>
+		</p>
+		<p class='input-field'>
+			<input type="submit" value='Submit' class='btn'>
+		</p>
+	</form>
+</div>
 </div>

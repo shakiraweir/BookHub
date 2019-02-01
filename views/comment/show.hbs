@@ -1,0 +1,16 @@
+{{#if comment}}
+<div class="card">
+    <div class="date">
+        Added on: {{ comment.createdAt }}
+    </div>
+    <div class="title">
+        {{ comment.title }}
+    </div>
+    <div class="author">
+        {{ comment.author }}
+    </div>
+    <div class="comments">
+        {{ comment.comment }}
+    </div>
+</div>
+{{/if}}
