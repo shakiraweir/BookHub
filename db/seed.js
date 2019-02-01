@@ -1,3 +1,4 @@
+const mongoose = require("./db/connection")
 const User = require("../models/User");
 const Book  = require("../models/Book");
 const Post  = require("../models/Post");
