@@ -29,4 +29,9 @@ app.use(function(req, res, next) {
 app.use(require("./routes/index.js"));
 // app.use(require("/", routes))
 
-app.listen(4000, () => console.log("app is running on port 4000"));
+app.set('port', process.env.PORT || 3001)
+
+app.listen(app.get('port'), () => {
+  console.log(`✅ PORT: ${app.get('port')} 🌟`)
+})
+// app.listen(4000, () => console.log("app is running on port 4000"));

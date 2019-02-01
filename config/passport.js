@@ -22,7 +22,7 @@ module.exports = function(passport) {
       if (err) return callback(err)
 
       if (user) {
-        return callback(null, false, req.flash('signupMessage', 'Hey buddy, the email is already taken!!'))
+        return callback(null, false, req.flash('signupMessage', 'Invalid Email!!'))
       } else {
         let newUser = new User()
         newUser.local.email = email
