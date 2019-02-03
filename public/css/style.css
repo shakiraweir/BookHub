@@ -151,7 +151,7 @@ aside a {
 .card-content {
     padding-left: 30px;
     padding-right: 5px;
-    border: solid purple 2px;
+    /* border: solid purple 2px; */
     display: flex;
     /* width: 100%; */
 }
@@ -186,7 +186,7 @@ aside a {
 
 }
 
-.comments {
+.comment {
     background: rgba(179, 119, 0, 0.3);
     border: solid rgba(179, 119, 0.35) 0.5px;
     padding: 3px 5px;
