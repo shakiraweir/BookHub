@@ -3,6 +3,8 @@
 ## Description
 This app provides a personalized way for book collectors to create and keep a digital database of their home library. Not only is it a tool for catologing your books, but a user can connect to a community of other book lovers through the discussion forum.
 
+![](planning/IMG-3157.JPG?raw=true)
+
 ## User Stories
 - *I need a way to keep my books digitally organized so I can track the quantity and category of books that I have in my library*. 
     * User can search an API and quickly upload their book to their personal collection. 
@@ -32,6 +34,10 @@ Book list: The user sees a list of all their books, automatically sorted by date
 Discussion forum: Users can talk about their favorite books with a community of book lovers. They can add to the discussion by posting a new comment, or they can reply to another users comment to keep the discussion going.
 
 ## Getting Started
+To use the app, visit the public site hosted on Heroku:
+(Pearls of Wisdom]{https://pearls-of-wisdom.herokuapp.com/
+)
+
 To set up the app locally:
 1. Fork and clone the [project repository](https://github.com/shakiraweir/Pearls-of-Wisdom)
 2. Install all dependencies
@@ -69,7 +75,7 @@ db.posts.find().pretty()
 ## Screencast
 [Watch a demo of the app here](https://vimeo.com/314865917)
 
-## Things I'd Like to Fix or Incorporate
+## Issues/Future Improvement
 ### Access Issues
 - User login - Make sure each user only has access to their own personal booklist, not all booklists from any user. 
 - User logout - Add functionality for user to logout of the app at anytime 
@@ -77,7 +83,10 @@ db.posts.find().pretty()
 
 ### CRUD 
 - Fix update function
+
 - Add ability for user to update and delete their own discussion posts
+
+- Since this is a demo app that is not in full production, provide a way to use the app without user login/signup for learning purposes
 
 ### Bonus Features
 - Incoporate a public API from Amazon or Google that allows users to quickly search for their book and upload the corresponding image, title, author and description, rather than manually typing them in
