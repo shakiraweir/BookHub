@@ -35,7 +35,7 @@ Discussion forum: Users can talk about their favorite books with a community of 
 
 ## Getting Started
 To use the app, visit the public site hosted on Heroku:
-(Pearls of Wisdom]{https://pearls-of-wisdom.herokuapp.com/
+(Pearls of Wisdom){https://pearls-of-wisdom.herokuapp.com/
 )
 
 To set up the app locally:
