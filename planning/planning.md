@@ -18,3 +18,39 @@ This app provides a personalized way for book collectors to create and keep a di
     * User can reply to other user's posts. 
     * User can share their own thoughts/reviews by adding a new public post in the forum. 
 
+### Models:
+```
+const Book = new Schema({
+	title: [String],
+	author: [String],
+	subtopic: [String],
+	description: [String],
+	comment: [String],
+	complete: Boolean,
+	createdAt: {
+		type: Date,
+		default: Date.now()
+	},
+	user: {
+		type: Schema.Types.ObjectId,
+		ref: "User"
+	}
+  })
+```
+
+```
+const Post = new Schema({
+    title: [String],
+    author: [String],
+    comment: [String],
+    createdAt: {
+      type: Date,
+      default: Date.now()
+    },
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    }
+  })
+
+```
