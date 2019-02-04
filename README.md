@@ -81,8 +81,6 @@ db.posts.find().pretty()
 - Fix authentication issues
 
 ### CRUD 
-- Fix update function
-
 - Add ability for user to update and delete their own discussion posts
 
 - Since this is a demo app that is not in full production, provide a way to use the app without user login/signup for learning purposes
