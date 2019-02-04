@@ -43,11 +43,6 @@ module.exports = {
             )
         .then(book => {res.redirect('/')})
     },
-    // update: (req, res) => {
-    //     Book.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true },(err, doc) => {}).then(() => { 
-    //       res.redirect('/')
-    //     }) 
-    //   },
     delete: (req, res) => {
         Book.findOneAndRemove({ _id: req.params.id })
         .then( () => {
