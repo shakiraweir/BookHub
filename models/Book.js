@@ -2,12 +2,11 @@ const mongoose = require("../db/connection")
 const Schema = mongoose.Schema
 
 const Book = new Schema({
-	title: [String],
-	author: [String],
-	subtopic: [String],
-	description: [String],
-	comment: [String],
-	complete: Boolean,
+	title: String,
+	author: String,
+	subtopic: String,
+	description: String,
+	comment: String,
 	createdAt: {
 		type: Date,
 		default: Date.now()

@@ -24,20 +24,34 @@ module.exports = {
             res.render("book/new", { book })
         })
     },
-    update: (req, res) => {
-        let { description } = req.body.book
+    edit: (req, res) => {
+        Book.findOne({ _id: req.params.id })
+        .then(book=> {
+            res.render('book/edit', book )
+          })
+      },
+      update: (req, res) => {
         Book.findOneAndUpdate(
-            { _id: req.params.id}, 
-            {$set:{description:description}})
-        .then(() => {res.redirect('/')})
+            { _id: req.params.id }, 
+            {$set:{
+                title: req.body.book.title,
+                author: req.body.book.author,
+                subtopic: req.body.book.subtopic,
+                description: req.body.book.description,
+                comment: req.body.book.comment
+            }}
+            )
+        .then(book => {res.redirect('/')})
     },
+    // update: (req, res) => {
+    //     Book.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true },(err, doc) => {}).then(() => { 
+    //       res.redirect('/')
+    //     }) 
+    //   },
     delete: (req, res) => {
         Book.findOneAndRemove({ _id: req.params.id })
         .then( () => {
             res.redirect('/')
         })
-    },
-    edit: (req, res) => {
-        res.render('book/edit', {id: req.params.id})
     }
 }

@@ -4,7 +4,7 @@ const router = express.Router()
 router.use('/', require('./application'))
 router.use('/post', require('./application2'))
 
-router.use('/user', require('./user'))
+// router.use('/user', require('./user'))
 router.use('/book', require('./book'))
 router.use('/post', require('./post'))
 

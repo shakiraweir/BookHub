@@ -9,14 +9,14 @@ router.get('/new', bookController.new)
 //show new books
 router.get('/:id', bookController.show)
 
+//edit the book
+router.get('/edit/:id', bookController.edit)
 //update the book
-router.patch('/:id', bookController.update)
+router.put('/edit/:id', bookController.update)
 
 //delete the book
 router.delete('/:id', bookController.delete)
 
-//edit the book
-router.get('/:id/edit', bookController.edit)
 
 module.exports = router
 

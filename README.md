@@ -3,6 +3,7 @@
 ## Description
 This app provides a personalized way for book collectors to create and keep a digital database of their home library. Not only is it a tool for catologing your books, but a user can connect to a community of other book lovers through the discussion forum.
 
+
 ![](planning/IMG-3157.JPG?raw=true)
 
 ## User Stories
@@ -34,9 +35,7 @@ Book list: The user sees a list of all their books, automatically sorted by date
 Discussion forum: Users can talk about their favorite books with a community of book lovers. They can add to the discussion by posting a new comment, or they can reply to another users comment to keep the discussion going.
 
 ## Getting Started
-To use the app, visit the public site hosted on Heroku:
-(Pearls of Wisdom)[https://pearls-of-wisdom.herokuapp.com/
-]
+To use the app, visit the public site hosted on Heroku:[Pearls of Wisdom](https://pearls-of-wisdom.herokuapp.com/)
 
 To set up the app locally:
 1. Fork and clone the [project repository](https://github.com/shakiraweir/Pearls-of-Wisdom)
