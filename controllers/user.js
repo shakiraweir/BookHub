@@ -6,8 +6,9 @@ const passport = require('passport')
 
 module.exports = {
 	createSignup: (req, res, next) => {
+		// call authenticate method and tell passport which strategy to use
 		var signupStrategy = passport.authenticate('local-signup', {
-			successRedirect: '/',
+			successRedirect: '/home/books',
 			failureRedirect: '/user/signup',
 			failureFlash: true
 		})
@@ -18,13 +19,18 @@ module.exports = {
 	},
 	createLogin: (req, res, next) => {
 		var loginStrategy = passport.authenticate('local-login', {
-			successRedirect: '/',
+			successRedirect: '/home/books',
 			failureRedirect: '/user/login',
 			failureFlash: true
 		})
 		return loginStrategy(req, res, next)
 	},
 	login: (req, res) => {
-		res.render('user/login', {message: req.flash('loginMessage')})
+		res.render('user/login', {message: 
+		req.flash('loginMessage')})
+	},
+	logout: (req, res) => {
+		req.logout();
+		res.redirect('/')
 	}
 }

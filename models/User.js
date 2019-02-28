@@ -14,6 +14,7 @@ const User = new Schema({
 	}
 })
 
+// Hash the password received and save it as encrypted
 User.methods.encrypt = function(password) {
 	return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null)
 }

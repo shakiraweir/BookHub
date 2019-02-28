@@ -19,14 +19,18 @@
             </div>
             <div class="navbar-two">
                 <ul>
+                  {{#if currentUser}}
                     <li><a href="/" class="link">Home</a></li>
-                    <li><a href="/user/signup" class="link">Signup</a></li>
+                    <li><a href="/user/logout" class="link">Logout {{currentUser.local.email}}</a></li>
+                  {{else}}
                     <li><a href="/user/login" class="link">Login</a></li>
+                    <li><a href="/user/signup" class="link">Signup</a></li>
+                  {{/if}}
                 </ul>
             </div>
     </header>
-    {{!-- <section class="container">
-        <aside>
+    <section class="container">
+        {{!-- <aside>
             <ul>
                 <li><a href="/book/new">Add</a></li>
                 <li><a href="/post/new">Share</a></li>

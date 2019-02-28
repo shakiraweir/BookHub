@@ -18,10 +18,12 @@ app.use(express.static("public"));
 app.use(session({secret: 'WDI-GENERAL-ASSEMBLY-EXPRESS'}))
 app.use(flash())
 
+// Use passport for user authentication
 require('./config/passport')(passport)
 app.use(passport.initialize())
 app.use(passport.session())
 
+// Access the user object globally (so user can logout at anytime)
 app.use(function(req, res, next) {
   res.locals.currentUser = req.user
   next()

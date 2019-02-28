@@ -1,7 +1,7 @@
-// const express = require('express')
-// const router = express.Router()
-// const applicationController = require('../controllers/application')
+const express = require('express')
+const router = express.Router()
+const applicationController = require('../controllers/application')
 
-// router.get('/home', applicationController.index)
+router.get('/books', applicationController.index)
 
-// module.exports = router
+module.exports = router
