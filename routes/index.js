@@ -1,8 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
-router.use('/', require('./application'))
-router.use('/post', require('./application2'))
+// router.use('/home', require('./application'))
+// router.use('/post', require('./application2'))
+router.use('/', require('./application3'))
+
 
 router.use('/user', require('./user'))
 router.use('/book', require('./book'))

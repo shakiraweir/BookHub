@@ -1,6 +1,6 @@
 const Post = require('../models/Post')
 
-module.exports ={   
+module.exports = {    
     index: (req, res) => {
         Post.find({})
         .sort({ createdAt: -1 })

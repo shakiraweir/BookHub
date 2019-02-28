@@ -24,8 +24,11 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background: #ffd200;
-    border-bottom: solid black 0.5px;
+    background: #000;
+    /* border-bottom: solid black 0.5px; */
+        /* border: solid blue 2px; */
+    margin-bottom: 0;
+    height: 100px;
 }
 /* h1 {
     border: solid black 2px;
@@ -34,6 +37,8 @@ header {
 
 header .heading {
     text-align: center;
+    color: white;
+
     /* width: 100%; */
     /* border: solid blue 2px; */
 
@@ -47,7 +52,7 @@ header .heading {
 a {
     text-decoration: none;
     list-style: none;
-    color: #000;
+    color: gray;
 }
 
 
@@ -79,6 +84,9 @@ li {
 
 }
 
+/* .main-content {
+    padding-top: 0;
+} */
 ul li{
 
     text-align: right;
@@ -120,8 +128,12 @@ aside a {
     /* border: solid blue 2px; */
     /* text-align: center; */
     padding: 10px;
+    padding-top: 0;
 }
 
+footer {
+    background: gray;
+}
 .books {
     text-align: left;
     /* border: solid purple 2px; */
@@ -243,4 +255,15 @@ h3, .title {
     margin-bottom: 0;
     /* color: #664400; */
 
+}
+
+.hero-img {
+    background-image: url("../images/annie-spratt-710490-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    /* background: yellow; */
+    border: solid red 1px;
+    width: 80vw;
+    height: 90vh;
+    margin-top: 0;
 }
