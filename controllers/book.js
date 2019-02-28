@@ -10,7 +10,8 @@ module.exports = {
             comment: req.body.book.comment
         })
         .then(book => {
-            res.redirect(`book/${book._id}`)
+            // res.redirect(`/book/${book._id}`)
+            res.redirect('/home')
         })
     },
     new: (req, res) => {
@@ -41,12 +42,12 @@ module.exports = {
                 comment: req.body.book.comment
             }}
             )
-        .then(book => {res.redirect('/')})
+        .then(book => {res.redirect('/home')})
     },
     delete: (req, res) => {
         Book.findOneAndRemove({ _id: req.params.id })
         .then( () => {
-            res.redirect('/')
+            res.redirect('/home')
         })
     }
 }
