@@ -1,6 +1,12 @@
 const Book = require('../models/Book')
 
 module.exports = {
+    search: (req, res) => {
+        // get req.body.searchparams
+        // axios.get(url, {searchParams})
+        // .then(result)
+        // res.render('viewName', { result })
+    },
     create: (req, res) => {
         Book.create({
             title: req.body.book.title,
@@ -14,7 +20,7 @@ module.exports = {
             res.redirect('/home')
         })
     },
-    new: (req, res) => {
+    n     ew: (req, res) => {
         res.render('book/new')
     },
     show: (req, res) => {

@@ -1,7 +1,7 @@
-# Pearls of Wisdom
+# BookHub
 
 ## Description
-This app provides a personalized way for book collectors to create and keep a digital database of their home library. Not only is it a tool for catologing your books, but a user can connect to a community of other book lovers through the discussion forum.
+The BookHub provides a personalized way for book collectors to create and keep a digital database of their home library. Not only is it a tool for catologing your books, but a user can connect to a community of other book lovers through the discussion forum.
 
 
 ![](planning/IMG-3157.JPG?raw=true)

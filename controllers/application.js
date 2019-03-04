@@ -12,4 +12,12 @@ module.exports = {
     }
 }
 
+// // Get
+// fetch('/artists.json')
+//   .then(response => {
+//     console.log(response);
+//   })
+//   .catch(error => {
+//     console.log(error);
+//   })
 
